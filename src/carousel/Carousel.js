@@ -1132,8 +1132,8 @@ export default class Carousel extends Component {
 
         if (positionIndex === this._activeItem) {
             return;
-        }
-
+        } 
+        this._activeItem = positionIndex;
         this._snapToItem(positionIndex, animated, fireCallback);
     }
 
